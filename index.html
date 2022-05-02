@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PyScript Demo</title>
+    <link rel="stylesheet" href="./css/pyscript.css" />
+    <script defer src="./js/pyscript.js"></script>
+  </head>
+
+  <body>
+    PyScript Demo! <br>
+    <py-script output="out">
+from datetime import datetime
+now = datetime.now()
+dt = now.strftime("%m/%d/%Y, %H:%M:%S")
+
+print(f"This is the current date and time, as computed by Python: {dt}")
+for i in range(0,5):
+    print(f"This is index: {i}")
+
+
+    </py-script>
+    <div id="out"></div>
+  </body>
+</html>

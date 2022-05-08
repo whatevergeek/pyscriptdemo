@@ -3,12 +3,18 @@
   <head>
     <title>PyScript Demo</title>
     <link rel="stylesheet" href="./css/pyscript.css" />
+    <link rel="stylesheet" href="./css/button.css" />
     <script defer src="./js/pyscript.js"></script>
   </head>
 
   <body>
     PyScript Demo! <br>
+    <p>Name: <input type="text" id="txtName" value="Enter name here."></p>
     <label id="lblOut"></label>
+    <br>
+    <input type="button" class="button" id="btnClick" value="Click Me!">
+    <br>
+    <br>
     <div id="out"></div>
     <py-script src="./py/time_info.py" output="out">
     </py-script>
